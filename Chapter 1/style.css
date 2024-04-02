@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 10px; */
+  height: 80px;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.nav-items > ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.nav-items > ul > li {
+  color: rgb(3, 102, 3);;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.search{
+    height: 140px;
+}
+.cards{
+    /* display: flex;
+    flex-wrap: wrap; */
+ 
+   
+    display: grid;
+   
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    
+ margin: 20px;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  top: 100px;
+  right: 37%;
+  border: 2px solid rgb(3, 102, 3);
+  border-radius: 12px;
+  height: 50px;
+  
+}
+.input {
+  padding: 10px;
+}
+.inputBox {
+  height: 40px;
+  width: 500px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 2px;
+}
+.searchIcon {
+  background-color: rgb(3, 102, 3);;
+  color: aliceblue;
+  height: inherit;
+  overflow: hidden;
+  border-top-right-radius: 12px;
+  /* Border radius for bottom-right corner */
+  border-bottom-right-radius: 12px;
+  /* Border radius for bottom-left corner */
+  padding: 15px;
+  cursor: pointer;
+}
+.card{
+    background-color: #f9f9f9;
+    height: 350px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+border: 2px solid rgb(3, 102, 3);
+overflow: hidden;
+
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+.card-items{
+margin-top: 10px;
+    color:rgb(3, 102, 3);;;
+     font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer{
+    width: 100vw;
+    height: 60px;
+    margin-top: 20px;
+    background-color: rgb(1, 87, 1);
+    color: white;
+    font-size: medium;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 0;
+}

@@ -2,7 +2,7 @@
 
 ## Setup Instructions
 
-Follow these steps to set up the project:
+Follow these steps to make this project from stracth:
 
 ### 1. Initialize npm
 

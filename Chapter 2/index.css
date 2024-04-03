@@ -3,6 +3,17 @@
     padding:0;
     box-sizing: border-box;
 }
+.logo{
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+   font-size: 30px;
+   
+   background-image: linear-gradient(to right, darkorange, rgb(110, 61, 2));
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+    
+}
 .header{
     display: flex;
     align-items: center;
@@ -41,8 +52,67 @@ justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
+.searchBar{
+    display: flex;
+    position: absolute;
+    top:200px;
+    right:30%
+
+}
+.search-input{
+    height: 50px;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid darkorange;
+
+}
+.search-button{
+    height: 50px;
+    width: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: darkorange;
+    color: aliceblue;
+    font-weight: 600;
+cursor: pointer;
+}
+.search-button:hover{
+    background-color: rgb(229, 128, 4);
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card{
+    background-color: aliceblue;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.cards{
+    margin-top: 200px;
+    padding: 50px;
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.card-items{
+    color: rgb(98, 54, 1);
+}
 .footer{
+
     height: 60px;
     width: 100vw;
+    position: relative;
+    top:10px;
     background-color: darkorange;
 }

@@ -88,21 +88,20 @@ cursor: pointer;
 .search-button:hover{
     background-color: rgb(229, 128, 4);
 }
-.card-grid{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 20px;
-}
+
 .card{
     background-color: aliceblue;
     height: 350px;
-    width: 300px;
+    width: 80%;
     padding: 20px;
     border-radius: 5px;
 }
 .cards{
     margin-top: 200px;
     padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
 }
 .card-img{
     width: 100%;
@@ -169,12 +168,13 @@ cursor: pointer;
     background-color: rgb(212, 220, 227);
     margin: 5px;
     height: 20px;
-    width: 250px;
+    width: 90%;
     background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
     background-size: 800px 104px;
     position: relative;
     animation: shimmerimg 1.5s infinite linear;
     border-radius: 5px;
+    
   }
   
 .footer{

@@ -1,23 +1,24 @@
 import React, { useState } from 'react'
+import { IMG_CDN_URL } from '../config/constant'
 
 
-const Card = ({data}) => {
+const Card = ({cloudinaryImageId,name,areaName,cuisines}) => {
 
   return (
     <div className="card-grid">
-      {data.map((data)=>(
-        <div key={data.title} className='card'>
-        <img className='card-img' src={data.image} alt="carditems" />
+     
+        <div  className='card'>
+        <img className='card-img' src={IMG_CDN_URL + cloudinaryImageId} alt="card-img" />
         <div className="card-items">
-          <h1 className="card-name">
-            {data.title}
-          </h1>
-          <p className="descr">{data.description}</p>
-          <p className="author">{data.author}</p>
+          <h3 className="card-name">
+            {name }
+          </h3>
+          <p className="description">{cuisines}</p>
+          <p className="author">{areaName}</p>
   
         </div>
         </div>
-      ))}
+ 
     
     </div>
   )

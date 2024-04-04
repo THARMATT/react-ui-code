@@ -13,7 +13,7 @@ const Card = ({data}) => {
             {data.title}
           </h1>
           <p className="descr">{data.description}</p>
-          <p className="author">{data.description}</p>
+          <p className="author">{data.author}</p>
   
         </div>
         </div>

@@ -322,14 +322,14 @@ export const RestroData= [{
   export const dummyData=[
     {
       "image": "https://source.unsplash.com/random/400x300",
-      "title": "Card 1",
+      "title": "king 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "author": "John Doe",
       "date": "2024-04-03"
     },
     {
       "image": "https://source.unsplash.com/random/400x301",
-      "title": "Card 2",
+      "title": "burger 2",
       "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "author": "Jane Smith",
       "date": "2024-04-04"

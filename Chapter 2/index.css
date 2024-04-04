@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
 .logo{
     font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
@@ -91,7 +95,7 @@ cursor: pointer;
 }
 .card{
     background-color: aliceblue;
-    height: 400px;
+    height: 350px;
     width: 300px;
     padding: 20px;
     border-radius: 5px;
@@ -108,11 +112,78 @@ cursor: pointer;
 .card-items{
     color: rgb(98, 54, 1);
 }
+.shimmer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+   
+}
+
+
+
+
+
+
+
+
+  
+  .shimmer {
+    margin: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: aliceblue;
+
+  
+  }
+  
+  @keyframes shimmerimg {
+    0% {
+      background-position: -800px 0;
+    }
+    100% {
+      background-position: 800px 0;
+    }
+  }
+  
+  .shimmer-img {
+    background-color: rgb(212, 220, 227);
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    position: relative;
+    animation: shimmerimg 1.5s infinite linear;
+  }
+  
+  .shimmer-items {
+    margin-top: 10px;
+  }
+  
+  .shimmer-name,
+  .shimmer-description,
+  .shimmer-author,
+  .shimmer-date {
+    background-color: rgb(212, 220, 227);
+    margin: 5px;
+    height: 20px;
+    width: 250px;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    position: relative;
+    animation: shimmerimg 1.5s infinite linear;
+    border-radius: 5px;
+  }
+  
 .footer{
 
     height: 60px;
     width: 100vw;
     position: relative;
     top:10px;
+    font-size: larger;
+    color: aliceblue;
     background-color: darkorange;
 }

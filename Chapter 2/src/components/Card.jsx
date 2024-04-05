@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IMG_CDN_URL } from '../config/constant'
 
 
-const Card = ({cloudinaryImageId,name,areaName,cuisines}) => {
+const Card = ({cloudinaryImageId,name,avgRating,cuisines,areaName}) => {
 
   return (
     <div className="card-grid">
@@ -13,8 +13,10 @@ const Card = ({cloudinaryImageId,name,areaName,cuisines}) => {
           <h3 className="card-name">
             {name }
           </h3>
-          <p className="description">{cuisines}</p>
-          <p className="author">{areaName}</p>
+          <h4 className="author">{areaName}</h4>
+          <p className="description">{cuisines.join(', ')}</p>
+         
+          <p className="author">Ratings:{avgRating}</p>
   
         </div>
         </div>

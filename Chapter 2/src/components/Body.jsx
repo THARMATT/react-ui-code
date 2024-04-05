@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import { RESTRO_URL } from "../config/constant"; // Assuming RESTRO_URL is imported from the correct location
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [restro, setRestro] = useState([]); // State to hold restaurant data
@@ -34,6 +35,7 @@ const Body = () => {
       const apiUrl = RESTRO_URL;
       const response = await fetch(proxyUrl + apiUrl);
       const json = await response.json();
+      console.log(json)
       // Extract restaurant data from API response and set state
       setRestro(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       setFilterRestro(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -65,7 +67,7 @@ const Body = () => {
       {/* Render restaurant cards */}
       <div className="cards">
         {filterRestro.map((restaurant, index) => { // Render filtered restaurant data
-          return <Card key={index} {...restaurant.info} />;
+          return <Link className="card-link" to={"/restaurant/"+ restaurant.info.id} key={index}> <Card  {...restaurant.info} /></Link>;
         })}
       </div>
     </div>

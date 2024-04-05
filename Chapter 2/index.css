@@ -18,6 +18,17 @@ html,body{
    color: transparent;
     
 }
+
+.menubar{
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+   font-size: 30px;
+   
+   background-image: linear-gradient(to right, rgb(185, 107, 11), rgb(219, 165, 98));
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+}
 .header{
     display: flex;
     align-items: center;
@@ -58,9 +69,12 @@ justify-content: center;
 }
 .searchBar{
     display: flex;
-    position: absolute;
-    top:200px;
-    right:30%
+    position: relative;
+   height: 200px;
+   top:30px;
+   align-items: center;
+   justify-content: center;
+  
 
 }
 .search-input{
@@ -88,16 +102,27 @@ cursor: pointer;
 .search-button:hover{
     background-color: rgb(229, 128, 4);
 }
-
+.card-link{
+  text-decoration: none;
+}
+.menu-cards{
+  padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
 .card{
     background-color: aliceblue;
     height: 350px;
-    width: 80%;
+    width:80%;
     padding: 20px;
     border-radius: 5px;
 }
+.card-grid{
+  width: 400px;;
+}
 .cards{
-    margin-top: 200px;
+    
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -174,7 +199,8 @@ cursor: pointer;
     position: relative;
     animation: shimmerimg 1.5s infinite linear;
     border-radius: 5px;
-    
+    display: flex;
+    flex-wrap:wrap;
   }
   
 .footer{
